@@ -7,7 +7,7 @@ import { adminSignUp } from '../service/userService'
 
 const Signup = () => {
     
-    // const baseurl = "http://localhost:8080";
+     const baseurl = "http://localhost:8080";
 
     const navigate = useNavigate();
     const [user, setUser] = useState(
@@ -44,6 +44,7 @@ const Signup = () => {
                 console.log(resp);
                 alert(resp);
                 console.log("success fully added user");
+                navigate("/");
             }).catch((error) => {
                 console.log(error);
             })

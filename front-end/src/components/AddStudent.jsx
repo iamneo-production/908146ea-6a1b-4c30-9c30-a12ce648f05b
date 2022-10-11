@@ -46,7 +46,7 @@ const AddStudent = () => {
     <AdminNavbar/>
     <div className="addAcad">
         <span className='headcontainer'>
-            <h3 className='head'>Add Academy</h3>
+            <h3 className='head'>Add Student</h3>
         </span>
 
         <form action="" className='academyForm'>

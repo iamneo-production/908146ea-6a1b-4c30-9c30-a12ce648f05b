@@ -25,7 +25,7 @@ const Auth = () => {
             if(resp){
                 sessionStorage.setItem("email", login.email);
                 sessionStorage.setItem("userRole", "admin");
-                navigate("/navbar")
+                navigate("/adminNavbar")
             }
             console.log(resp);
         }).catch((error)=>{console.log(error);})
@@ -41,6 +41,7 @@ const Auth = () => {
             sessionStorage.setItem("userRole", "user");
             console.log(resp);
             console.log("success log");
+            navigate("/adminNavbar")
         }).catch((error) => {
             console.log(error);
         })
